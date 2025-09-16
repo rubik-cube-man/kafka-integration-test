@@ -9,8 +9,7 @@ import static io.restassured.RestAssured.given;
 public class IntegrationTest {
 
     @Test
-    public void test() throws InterruptedException {
-        Thread.sleep(9999999);
+    public void test() {
         given()
                 .when().get("/healthy")
                 .then()
